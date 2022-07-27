@@ -6,7 +6,7 @@ $queryuser=mysqli_query($conn,"SELECT * FROM enrollment WHERE no ='".$_GET['id']
 
 while($fetchuser=mysqli_fetch_array($queryuser))
 {
-	$id= $fetchuser['no'];
+	
 	$fullname=$fetchuser['fullname'];
 	$phonenumber=$fetchuser['phonenumber'];
 	$email=$fetchuser['email'];
@@ -71,22 +71,22 @@ if(isset ($_POST['update-records']))
 								<div class="row">
 									<div class="mb-3 col-lg-6 col-md-6 col-sm-12">
 										<label for="fullname" class="form-label">Full name</label>
-										<input type="text" class="form-control" name="fullname" value="<?php echo$fullname?>"placeholder="Enter your full name">
+										<input type="text" class="form-control" name="fullname" value="" placeholder="Enter your full name">
 									</div>
 									<div class="mb-3 col-lg-6 col-md-6 col-sm-12">
 										<label for="phonenumber" class="form-label">Phone </label>
-										<input type="tel" class="form-control"name="phonenumber"value="<?php echo$phonenumber?>" placeholder="+2547...">
+										<input type="tel" class="form-control"name="phonenumber"value="" placeholder="+2547...">
 									</div>
 								</div>
 								<div class="row">
 									<div class="mb-3 col-lg-6 col-md-6 col-sm-12">
 										<label for="email" class="form-label">Email address</label>
-										<input type="email" class="form-control" name="email" value="<?php echo$email?>" placeholder="Please enter your email">
+										<input type="email" class="form-control" name="email" value="" placeholder="Please enter your email">
 									</div>
 									<div class="mb-3 col-lg-6 col-md-6 col-sm-12">
 										<label for="gender" class="form-label">What's your gender</label>
 										<select name="gender" class="form-control" aria-label="default select example">
-											<option ><?php echo$gender?></option>
+											<option ></option>
 											<option value="Male">Male</option>
 											<option value="Female">Female</option>
 										</select>
@@ -94,7 +94,7 @@ if(isset ($_POST['update-records']))
 									
 									<div class="mb-3 col-lg-6">
 										<select name="course" class="form-control multiplchose_questiontypes" id="selector">
-											<option value="" ><?php echo$course?></option>
+											<option value="" ></option>
 											<option value="web design">web design</option>
 											<option value="cyber security">cyber security</option>
 											<option value="android development">android development</option>

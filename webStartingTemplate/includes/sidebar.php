@@ -24,5 +24,11 @@
 						<span>campus</span>
 					</a>
 				</li>
+				<li>
+					<a href="contactus.php">
+						<span><i class="fa fa-envelope"></i></span>
+						<span>messages</span>
+					</a>
+				</li>
 			</ul>
 </nav>
